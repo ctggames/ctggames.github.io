@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CTG Games documentation</title>
+<meta name="description" content="Documentation for the open-source Java libraries from CTG Games.">
+<meta name="author" content="CTG Games Limited">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<style>
+:root {
+  --navy: #1E3475;
+  --pale: #CFE2FF;
+  --gold: #C6AD5C;
+  --grey: #6C757D;
+  --ink: #212529;
+  --muted: #5c636a;
+  --rule: #dee2e6;
+  --bg: #ffffff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.55;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+a { color: var(--navy); }
+a:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+header {
+  background: var(--pale);
+  padding: .75rem 1rem;
+}
+header .bar {
+  max-width: 52rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+header img { width: 40px; height: 40px; }
+header a { text-decoration: none; color: var(--navy); font-weight: 600; font-size: 1.15rem; }
+main {
+  flex: 1;
+  max-width: 52rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+h1 { font-size: 1.75rem; margin: 0 0 .5rem; color: var(--navy); }
+.intro { margin: 0 0 2rem; color: var(--muted); max-width: 40rem; }
+.library { padding: 1.25rem 0; border-top: 1px solid var(--rule); }
+.library h2 { margin: 0 0 .35rem; font-size: 1.2rem; }
+.library p { margin: 0 0 .6rem; max-width: 40rem; }
+.library code { font-size: .85em; color: var(--muted); }
+.links { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; font-size: .95rem; }
+footer {
+  background: var(--grey);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: .9rem;
+}
+footer a { color: #fff; }
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <img src="logo.svg" alt="">
+    <a href="https://ctg.co.nz/">CTG Games</a>
+  </div>
+</header>
+<main>
+  <h1>Documentation</h1>
+  <p class="intro">Open-source Java libraries from CTG Games, published to Maven Central under <code>io.github.ctgnz</code> and licensed under Apache 2.0.</p>
+
+  <section class="library">
+    <h2>fxtivity</h2>
+    <p>The Effectivity pattern on JavaFX: things in effect for a period, values that change over time, and collections that all follow one application-wide effective date.</p>
+    <div class="links">
+      <a href="fxtivity/">Specification</a>
+      <a href="https://github.com/ctggames/fxtivity">Source</a>
+      <a href="https://central.sonatype.com/artifact/io.github.ctgnz/fxtivity-core">Maven Central</a>
+    </div>
+  </section>
+
+  <section class="library">
+    <h2>yaml-flock</h2>
+    <p>A Jackson extension that lets one YAML document mix flow and block style, chosen property by property, by annotating the model.</p>
+    <div class="links">
+      <a href="yaml-flock/">Specification</a>
+      <a href="https://github.com/ctggames/yaml-flock">Source</a>
+      <a href="https://central.sonatype.com/artifact/io.github.ctgnz/yaml-flock">Maven Central</a>
+    </div>
+  </section>
+
+  <section class="library">
+    <h2>foxglove</h2>
+    <p>Native support for SVG in JavaFX.</p>
+    <div class="links">
+      <a href="foxglove/">Conformance results</a>
+      <a href="https://github.com/ctggames/foxglove">Source</a>
+      <a href="https://central.sonatype.com/artifact/io.github.ctgnz/foxglove">Maven Central</a>
+    </div>
+  </section>
+
+  <section class="library">
+    <h2>jmsfx</h2>
+    <p>Joint military symbology (NATO APP-6E) on JavaFX.</p>
+    <div class="links">
+      <a href="https://jmsfx.ctg.co.nz/">Symbol browser</a>
+      <a href="https://github.com/ctggames/jmsfx">Source</a>
+      <a href="https://central.sonatype.com/artifact/io.github.ctgnz/jmsfx-core">Maven Central</a>
+    </div>
+  </section>
+</main>
+<footer>
+  &copy; CTG Games Limited &middot; <a href="https://ctg.co.nz/">ctg.co.nz</a>
+</footer>
+</body>
+</html>
